@@ -371,7 +371,8 @@
                 super();
                 this.$link = createDOM('a', {
                     href: data.URL || 'javascript:void(0)',
-                    ...(data.URL && { target: '_blank' }),
+                    ...(data.URL && { target: '_blank', className: 'clickable' }),
+                    ...(!data.URL && { css: { cursor: 'default' } }),
                 }, this);
                 this.$date = createDOM('span', {
                     textContent: dateAndTime('mm/dd', data.date),
@@ -403,8 +404,7 @@
                     }, this.$link)
                 editDOM(this, {
                     is: 'update-li',
-                    className: 'information-item clickable',
-                    onclick: () => { console.log(`${data.URL}を開く`) }
+                    className: 'information-item',
                 }, $UL.information);
             }
         }
