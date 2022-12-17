@@ -1,33 +1,129 @@
 [
 	{
-		"date": "2020-04-05T11:40",
+		"date": "2019-09-23T18:31",
+		"type": "投稿",
+		"subject": "ミニブログからブログにカムバック",
+		"URL": "https://note.com/noratetsu/n/nb826cff56f17"
+	},
+	{
+		"date": "2019-09-24T01:09",
+		"type": "投稿",
+		"subject": "「書いて披露する」ことの不安、ｎ番煎じになる勇気",
+		"URL": "https://note.com/noratetsu/n/n7fdb8a639973"
+	},
+	{
+		"date": "2019-09-25T09:40",
+		"type": "投稿",
+		"subject": "「手帳術」に憧れるけどぶっちゃけそれがやりたいわけではない気がする皆様",
+		"URL": "https://note.com/noratetsu/n/n2984eec88fe2"
+	},
+	{
+		"date": "2019-09-27T18:21",
+		"type": "投稿",
+		"subject": "一発で決まればかっこいいけど大事なことは何度書いてもいいよね",
+		"URL": "https://note.com/noratetsu/n/n31d61a6cc194"
+	},
+	{
+		"date": "2019-09-28T22:26",
+		"type": "投稿",
+		"subject": "Notionから学んだこと――情報管理の五形態",
+		"URL": "https://note.com/noratetsu/n/n57f82abe48fb"
+	},
+	{
+		"date": "2019-10-07T15:44",
+		"type": "投稿",
+		"subject": "読んだ本を忘れない5つのメモ",
+		"URL": "https://note.com/noratetsu/n/n36a055e93a3c"
+	},
+	{
+		"date": "2020-04-02T17:46",
+		"type": "投稿",
+		"subject": "noteの再開／膨張する\"意識\"を宥める",
+		"URL": "https://note.com/noratetsu/n/n2ef3ed7aceb7"
+	},
+	{
+		"date": "2020-04-03T09:55",
+		"type": "投稿",
+		"subject": "タイトルでカッコつけると失敗するかもしれない",
+		"URL": "https://note.com/noratetsu/n/na5135a42626b"
+	},
+	{
+		"date": "2020-04-04T09:54",
+		"type": "投稿",
+		"subject": "です・ます調は距離が近過ぎるのかもしれない",
+		"URL": "https://note.com/noratetsu/n/n38a228728d6a"
+	},
+	{
+		"date": "2020-04-05T09:42",
 		"type": "投稿",
 		"subject": "誰かにとっての「今更」は誰かにとっての「今」だ、という今更のこと",
-		"URL": "https://noratetsu.blogspot.com/2020/04/now.html"
+		"URL": "https://note.com/noratetsu/n/ne518d7211291"
 	},
 	{
-		"date": "2020-04-07T16:09",
+		"date": "2020-04-05T15:54",
 		"type": "投稿",
-		"subject": "「こころのそっくりさん」を探す",
-		"URL": "https://noratetsu.blogspot.com/2020/04/similar.html"
+		"subject": "貧乏性の私はEvernoteの活用に失敗し、やがてScrapboxに出合った",
+		"URL": "https://note.com/noratetsu/n/n00f686545939"
 	},
 	{
-		"date": "2020-04-08T17:25",
+		"date": "2020-04-07T00:16",
+		"type": "投稿",
+		"subject": "noteで「こころのそっくりさん」を探す",
+		"URL": "https://note.com/noratetsu/n/nf37a790b3393"
+	},
+	{
+		"date": "2020-04-08T09:23",
 		"type": "投稿",
 		"subject": "嘘の「いい話」は見抜くよりおいしく食べたい",
-		"URL": "https://noratetsu.blogspot.com/2020/04/falsehood.html"
+		"URL": ""
 	},
 	{
-		"date": "2020-04-14T23:58",
+		"date": "2020-04-08T23:26",
+		"type": "投稿",
+		"subject": "note再開一週間／自分の中の\"作家様\"を叱らない",
+		"URL": "https://note.com/noratetsu/n/nf1c2775afe3e"
+	},
+	{
+		"date": "2020-04-12T23:30",
+		"type": "投稿",
+		"subject": "Scrapboxのページは三種類――タグ・キーワード・個別記事",
+		"URL": "https://note.com/noratetsu/n/nbb2412e139c0"
+	},
+	{
+		"date": "2020-04-14T23:04",
 		"type": "投稿",
 		"subject": "タイトルという無理難題",
-		"URL": "https://noratetsu.blogspot.com/2020/04/title.html"
+		"URL": "https://note.com/noratetsu/n/n2ebb3bc3941e"
 	},
 	{
-		"date": "2020-04-15T23:46",
+		"date": "2020-04-15T08:07",
 		"type": "投稿",
 		"subject": "「わかる人だけわかってほしい」という幻想は叶うか",
-		"URL": "https://noratetsu.blogspot.com/2020/04/empathy.html"
+		"URL": "https://note.com/noratetsu/n/nbfdb0a56ca0d"
+	},
+	{
+		"date": "2021-02-23T16:29",
+		"type": "投稿",
+		"subject": "Obsidianで人生が変わる（予定）",
+		"URL": "https://note.com/noratetsu/n/nd4f4c04577f2"
+	},
+	{
+		"date": "2021-02-25T09:34",
+		"type": "投稿",
+		"subject": "【Obsidian】Zettelkastenのテンプレートはこう使っています",
+		"URL": "https://note.com/noratetsu/n/n7c3d8259e72f"
+	},
+	{
+		"date": "2021-02-26T17:18",
+		"type": "投稿",
+		"subject": "【Scrapbox】タグは「タグです！」とわかるようにするといいかも",
+		"URL": "https://note.com/noratetsu/n/nfdedf96f71b0"
+	},
+	{
+		"date": "2021-02-28T08:52",
+		"type": "投稿",
+		"subject": "【Anki】挫折しないために、学習開始の前にカード一覧を見る",
+		"URL": "https://note.com/noratetsu/n/nf91d38d3c654"
 	},
 	{
 		"date": "2021-03-02T17:12",
@@ -36,10 +132,22 @@
 		"URL": "https://noratetsu.blogspot.com/2021/03/restart.html"
 	},
 	{
+		"date": "2021-03-02T17:45",
+		"type": "投稿",
+		"subject": "【Obsidian】デイリーノートの作成と活用",
+		"URL": "https://note.com/noratetsu/n/na64c10334966"
+	},
+	{
 		"date": "2021-03-03T12:35",
 		"type": "投稿",
 		"subject": "情報整理と執筆作業は「有機度」が異なるせいでひとつのツールに同居させられない",
 		"URL": "https://noratetsu.blogspot.com/2021/03/writing.html"
+	},
+	{
+		"date": "2021-03-04T11:58",
+		"type": "投稿",
+		"subject": "【Obsidian】ノートの三分類―構造・結論・覚書①",
+		"URL": "https://note.com/noratetsu/n/n06962cc77e79"
 	},
 	{
 		"date": "2021-03-05T22:05",
@@ -52,6 +160,12 @@
 		"type": "投稿",
 		"subject": "アウトライナーの使い方ド下手問題①～「きちんとしている感」との格闘～",
 		"URL": "https://noratetsu.blogspot.com/2021/03/outliner01.html"
+	},
+	{
+		"date": "2021-03-10T17:19",
+		"type": "投稿",
+		"subject": "【Obsidian】ノートの三分類―構造・結論・覚書②実践編",
+		"URL": "https://note.com/noratetsu/n/n196b456c5b22"
 	},
 	{
 		"date": "2021-03-11T20:03",
@@ -462,6 +576,30 @@
 		"URL": "https://noratetsu.blogspot.com/2022/08/scrapbox.html"
 	},
 	{
+		"date": "2022-09-05T12:27",
+		"type": "投稿",
+		"subject": "【AutoHotkey】キー配列をカスタマイズしてみる",
+		"URL": "https://note.com/noratetsu/n/nc9322eac8d31"
+	},
+	{
+		"date": "2022-09-05T16:29",
+		"type": "投稿",
+		"subject": "【AutoHotkey】任意の文字列を呼び出す",
+		"URL": "https://note.com/noratetsu/n/n6830e9ebfab3"
+	},
+	{
+		"date": "2022-09-06T09:21",
+		"type": "投稿",
+		"subject": "【AutoHotkey】あの手この手で日時を表示してみる",
+		"URL": "https://note.com/noratetsu/n/ndc7a47827bb0"
+	},
+	{
+		"date": "2022-09-06T21:31",
+		"type": "投稿",
+		"subject": "【AutoHotkey】おみくじとじゃんけんを作ってみる",
+		"URL": "https://note.com/noratetsu/n/nea6c2133210e"
+	},
+	{
 		"date": "2022-09-07T22:32",
 		"type": "投稿",
 		"subject": "AutoHotkeyを使い始めた/noteを一年半ぶりに書いた",
@@ -472,6 +610,18 @@
 		"type": "投稿",
 		"subject": "デジタルツールでの情報カード性および文脈との結びつきの在り方",
 		"URL": "https://noratetsu.blogspot.com/2022/09/what-is-card.html"
+	},
+	{
+		"date": "2022-09-10T12:43",
+		"type": "投稿",
+		"subject": "【AutoHotkey】ハイアンドローゲームを作ってみる",
+		"URL": "https://note.com/noratetsu/n/n9fc36fd94289"
+	},
+	{
+		"date": "2022-09-11T09:51",
+		"type": "投稿",
+		"subject": "【AutoHotkey】カーソル位置の色情報を取得する",
+		"URL": "https://note.com/noratetsu/n/n99650dd6d9af"
 	},
 	{
 		"date": "2022-09-11T23:15",
@@ -492,10 +642,28 @@
 		"URL": "https://noratetsu.blogspot.com/2022/09/programming06.html"
 	},
 	{
+		"date": "2022-09-23T10:23",
+		"type": "投稿",
+		"subject": "【AutoHotkey】取得した色情報をファイルに記録する",
+		"URL": "https://note.com/noratetsu/n/nffe038aa9ce7"
+	},
+	{
 		"date": "2022-09-23T18:50",
 		"type": "投稿",
 		"subject": "ローカルのディレクトリの構造を大整理した",
 		"URL": "https://noratetsu.blogspot.com/2022/09/directory.html"
+	},
+	{
+		"date": "2022-09-28T18:27",
+		"type": "投稿",
+		"subject": "【AutoHotkey】数字選択式の簡易ランチャーを作る",
+		"URL": "https://note.com/noratetsu/n/n33552c8477b9"
+	},
+	{
+		"date": "2022-09-29T09:34",
+		"type": "投稿",
+		"subject": "【AutoHotkey】数字選択式の簡易ランチャーを作る2",
+		"URL": "https://note.com/noratetsu/n/n90bcf1d03e11"
 	},
 	{
 		"date": "2022-09-30T18:42",
