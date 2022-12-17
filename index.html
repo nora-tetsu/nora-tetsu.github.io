@@ -360,11 +360,11 @@
         }
 
         const FAVICON = [
-            { host: 'https://noratetsu.blogspot.com/20', img: 'http://www.google.com/s2/favicons?domain=https://www.blogger.com/' },
-            { host: 'https://tunnellingchannel.substack.com/', img: 'http://www.google.com/s2/favicons?domain=https://tunnellingchannel.substack.com/' },
-            { host: 'https://note.com/noratetsu/', img: 'http://www.google.com/s2/favicons?domain=https://note.com/' },
-            { host: 'https://twitter.com/Foam_Crab', img: 'http://www.google.com/s2/favicons?domain=https://twitter.com/' },
-            { host: 'https://fedibird.com/@noratetsu', img: 'http://www.google.com/s2/favicons?domain=https://fedibird.com/' },
+            { name: 'Noratetsu Lab', host: 'https://noratetsu.blogspot.com/20', img: 'http://www.google.com/s2/favicons?domain=https://www.blogger.com/' },
+            { name: 'トンネルChannel', host: 'https://tunnellingchannel.substack.com/', img: 'http://www.google.com/s2/favicons?domain=https://tunnellingchannel.substack.com/' },
+            { name: 'note', host: 'https://note.com/noratetsu/', img: 'http://www.google.com/s2/favicons?domain=https://note.com/' },
+            { name: 'Twitter', host: 'https://twitter.com/Foam_Crab', img: 'http://www.google.com/s2/favicons?domain=https://twitter.com/' },
+            { name: 'Mastodon', host: 'https://fedibird.com/@noratetsu', img: 'http://www.google.com/s2/favicons?domain=https://fedibird.com/' },
         ]
         class UpdateLi extends HTMLLIElement {
             constructor(data) {
@@ -388,6 +388,7 @@
                     if (data.URL.startsWith(obj.host)) {
                         this.$icon = createDOM('img', {
                             src: obj.img,
+                            title: obj.name,
                             className: 'icon',
                             height: 14,
                             width: 14,
