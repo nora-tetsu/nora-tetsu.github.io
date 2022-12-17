@@ -1,0 +1,437 @@
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta content='width=device-width,initial-scale=1.0,user-scalable=yes' name='viewport' />
+    <title>Noratetsu's page</title>
+    <link rel="stylesheet" href="../css/fontawesome/v5.15.4.css" />
+</head>
+<style>
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border: none;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        word-break: break-all;
+    }
+
+    body {
+        font-family: "UD デジタル 教科書体 NK-R", "Kosugi Maru",
+            "Roboto", Helvetica, Arial, "Hiragino Sans", sans-serif !important;
+    }
+
+    body {
+        padding: 0 var(--margin-side);
+        background-color: #fff;
+    }
+
+    #exlink {
+        display: flex;
+        list-style-type: none;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #exlink li {
+        width: 60px;
+        font-size: 12px;
+        margin: 14px;
+        text-align: center;
+    }
+
+    #exlink img {
+        width: 60px;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+    }
+
+    #exlink img:hover {
+        transform: scale(1.2);
+    }
+
+    #information-box {
+        width: 600px;
+        margin: 10px auto;
+    }
+
+    #information {
+        height: 100px;
+        padding: 4px;
+        border: 1px solid #888;
+        overflow-y: scroll;
+    }
+
+    li.information-item a {
+        color: unset;
+    }
+
+    li.information-item span {
+        display: inline-block;
+        padding: 1px;
+        margin-right: 2px;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    span.date {
+        width: 3rem;
+        text-align: right;
+    }
+
+    span.type {
+        background-color: #888;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 2.5rem;
+        text-align: center;
+    }
+
+    span.type[name="投稿"] {
+        background-color: #ea5550;
+    }
+
+    span.type[name="修正"] {
+        background-color: #00608d;
+    }
+
+    span.type[name="加筆"] {
+        background-color: #009944;
+    }
+
+    img.icon {
+        vertical-align: -1px;
+    }
+
+    span.subject {
+        width: calc(100% - 7rem);
+    }
+
+    #embed {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    #embed>div {
+        float: left;
+        width: calc(50vw - 150px);
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    #embed iframe {
+        width: 100% !important;
+        border: 1px solid #888 !important;
+        border-radius: 5px;
+    }
+
+    #embed div[name="Twitter"]>iframe {
+        padding: 1px !important;
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+
+    .clickable:hover {
+        background-color: #eee;
+        transition: background-color 0.3s;
+    }
+
+    @media screen and (max-width: 767px) {
+        nav {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        #exlink li {
+            width: 40px;
+            font-size: 12px;
+            margin: 14px;
+            text-align: center;
+        }
+
+        #exlink img {
+            width: 40px;
+            border-radius: 50%;
+            transition: unset;
+        }
+
+        #exlink img:hover {
+            transform: unset;
+        }
+
+        #information-box {
+            width: calc(100% - 40px);
+            max-width: 600px;
+        }
+
+        #embed>div {
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+    }
+</style>
+
+<body spellcheck="false">
+    <nav>
+        <ul id="exlink">
+            </div>
+    </nav>
+    <main>
+        <div id="information-box">
+            <p>Information</p>
+            <ul id="information"></ul>
+        </div>
+        <div id="embed">
+            <div name="Twitter">
+                <p>Twitter</p>
+                <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="300"
+                    href="https://twitter.com/Foam_Crab?ref_src=twsrc%5Etfw">Tweets by Foam_Crab</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div name="Mastodon">
+                <p>Mastodon（1時間毎に自動更新）</p>
+                <iframe id="Mastofeed" allowfullscreen sandbox="allow-top-navigation allow-scripts" width="400"
+                    height="300"
+                    src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffedibird.com%2Fusers%2Fnoratetsu&theme=dark&size=80&header=false&replies=true&boosts=false"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        // $fooはHTML要素を指す意味で使用
+
+        function createDOM(tagname, option, target, position = 'append') {
+            const elm = document.createElement(tagname);
+            editDOM(elm, option, target, position);
+            return elm;
+        }
+        function editDOM(elm, option, target, position = 'append') {
+            if (target) {
+                if (['append', 'prepend', 'after', 'before'].includes(position)) {
+                    target[position](elm);
+                } else {
+                    console.error('editDOM: position is invalid');
+                }
+            }
+            if (option && typeof option === 'object') {
+                for (const key in option) {
+                    if (key.startsWith('on')) {
+                        elm.addEventListener(key.slice(2), option[key]);
+                        continue;
+                    } else if (key.startsWith('$')) {
+                        editDOM(elm.querySelector(key.replace('$', '')), option[key])
+                        continue;
+                    } else if (key.startsWith('All$')) {
+                        elm.querySelectorAll(key.replace('All$', '')).forEach(element => {
+                            editDOM(element, option[key])
+                        })
+                        continue;
+                    }
+                    switch (key) {
+                        case '_addClass':
+                            elm.classList.add(...option[key]);
+                            break;
+                        case '_removeClass':
+                            elm.classList.remove(...option[key]);
+                            break;
+                        case 'css':
+                            Object.entries(option[key]).forEach(([key, value]) => elm.style.setProperty(key, value));
+                            break;
+                        case 'id':
+                        case 'className':
+                        case 'value':
+                        case 'innerText':
+                        case 'innerHTML':
+                        case 'textContent':
+                        case 'checked':
+                            elm[key] = option[key];
+                            break;
+                        default:
+                            elm.setAttribute(key, option[key]);
+                    }
+                }
+            }
+        }
+        function getDateData(dateObj = new Date()) {
+            const obj = {
+                yyyy: dateObj.getFullYear(),
+                yy: dateObj.getFullYear().toString().slice(-2),
+                m: dateObj.getMonth() + 1,
+                mm: ('00' + (dateObj.getMonth() + 1)).slice(-2),
+                d: dateObj.getDate(),
+                dd: ('00' + dateObj.getDate()).slice(-2),
+                h: dateObj.getHours(),
+                hh: ('00' + dateObj.getHours()).slice(-2),
+                n: dateObj.getMinutes(),
+                nn: ('00' + dateObj.getMinutes()).slice(-2),
+                s: dateObj.getSeconds(),
+                ss: ('00' + dateObj.getSeconds()).slice(-2),
+                day: dateObj.getDay(),
+            }
+            return obj;
+        }
+        function dateAndTime(format = 'yyyy-mm-ddThh:nn', dateStr) {
+            const dateObj = dateStr ? new Date(dateStr) : new Date();
+            const { yyyy, yy, mm, m, dd, d, hh, h, nn, n, ss, s } = getDateData(dateObj);
+            const result = format.replace('yyyy', yyyy).replace('yy', yy)
+                .replace('mm', mm).replace('m', m)
+                .replace('dd', dd).replace('d', d)
+                .replace('hh', hh).replace('h', h)
+                .replace('nn', nn).replace('n', n)
+                .replace('ss', ss).replace('s', s)
+                .replace('年月日', `${yyyy}年${m}月${d}日`)
+                .replace('時分', `${h}時${n}分`)
+            return result;
+        }
+        function autoRenderOnScroll(elm, px = 0, func = () => false) {
+            // pxはどの程度手前から判定するかの距離設定
+            if (elm.scrollTop + elm.clientHeight >= (elm.scrollHeight - px)) {
+                while (elm.scrollHeight - px < (elm.scrollTop + elm.clientHeight)) {
+                    if (func() == false) break; // func内でreturnを返せばbreakできる
+                }
+            }
+        }
+
+        const config = { rendering: [] };
+        const $UL = {
+            exlink: document.getElementById('exlink'),
+            information: document.getElementById('information'),
+        }
+        $UL.information.addEventListener('scroll', () => {
+            autoRenderOnScroll($UL.information, 30, () => {
+                const data = config.rendering.splice(0, 1)[0];
+                if (!data) return false;
+                new UpdateLi(data, this);
+                if (!config.rendering.length) return false;
+            })
+        })
+
+        class ExlinkLi extends HTMLLIElement {
+            constructor(data) {
+                super();
+                this.$a = createDOM('a', {
+                    href: data.url,
+                    title: data.url,
+                    target: '_blank',
+                }, this);
+                createDOM('img', { src: data.img }, this.$a);
+                createDOM('p', { textContent: data.title }, this);
+                editDOM(this, {}, $UL.exlink);
+            }
+        }
+        customElements.define('exlink-li', ExlinkLi, { extends: 'li' });
+        const LINK = [
+            { title: "Noratetsu Lab(Blog)", url: "https://noratetsu.blogspot.com/", img: "https://gyazo.com/5cf46a2e0afb62835764b49e7977a0d4/max_size/1000" },
+            { title: "茶の間 （ミニブログ）", url: "https://nora-tetsu.github.io/Chanoma/", img: "https://gyazo.com/8e76071e5281e7396c84c83d32554939/max_size/1000" },
+            { title: "Twitter", url: "https://twitter.com/Foam_Crab", img: "https://gyazo.com/c6f9ef45d7c4b64fe31909485b8a9222/max_size/1000" },
+            { title: "Mastodon", url: "https://fedibird.com/@noratetsu", img: "https://gyazo.com/6b7be677993109a95ae3e38684ede1af/max_size/1000" },
+            { title: "Substack", url: "https://substack.com/profile/97326198-foam_crab", img: "https://gyazo.com/697681c54bb68010e6e027d724d1dd2d/max_size/1000" },
+            { title: "note", url: "https://note.com/noratetsu/", img: "https://gyazo.com/57f5da416fed69ca4f8621766aab12f0/max_size/1000" },
+            { title: "Scrapbox", url: "https://scrapbox.io/noratetsu/", img: "https://gyazo.com/5f93e65a3b979ae5333aca4f32600611/max_size/1000" },
+        ]
+        for (const data of LINK) {
+            new ExlinkLi(data);
+        }
+
+        const FAVICON = [
+            { host: 'https://noratetsu.blogspot.com/20', img: 'http://www.google.com/s2/favicons?domain=https://www.blogger.com/' },
+            { host: 'https://tunnellingchannel.substack.com/', img: 'http://www.google.com/s2/favicons?domain=https://tunnellingchannel.substack.com/' },
+            { host: 'https://note.com/noratetsu/', img: 'http://www.google.com/s2/favicons?domain=https://note.com/' },
+            { host: 'https://twitter.com/Foam_Crab', img: 'http://www.google.com/s2/favicons?domain=https://twitter.com/' },
+            { host: 'https://fedibird.com/@noratetsu', img: 'http://www.google.com/s2/favicons?domain=https://fedibird.com/' },
+        ]
+        class UpdateLi extends HTMLLIElement {
+            constructor(data) {
+                super();
+                this.$link = createDOM('a', {
+                    href: data.URL || 'javascript:void(0)',
+                    ...(data.URL && { target: '_blank' }),
+                }, this);
+                this.$date = createDOM('span', {
+                    textContent: dateAndTime('mm/dd', data.date),
+                    title: dateAndTime('yyyy年m月d日 h:nn', data.date),
+                    className: 'date',
+                }, this.$link);
+                this.$type = createDOM('span', {
+                    textContent: data.type,
+                    className: 'type',
+                    name: data.type,
+                }, this.$link);
+                if (FAVICON.some(obj => {
+                    if (!data.URL) return true;
+                    if (data.URL.startsWith(obj.host)) {
+                        this.$icon = createDOM('img', {
+                            src: obj.img,
+                            className: 'icon',
+                            height: 14,
+                            width: 14,
+                        }, this.$link);
+                        return true;
+                    }
+                }))
+                    this.$subject = createDOM('span', {
+                        textContent: data.subject,
+                        title: data.URL,
+                        className: 'subject',
+                    }, this.$link)
+                editDOM(this, {
+                    is: 'update-li',
+                    className: 'information-item clickable',
+                    onclick: () => { console.log(`${data.URL}を開く`) }
+                }, $UL.information);
+            }
+        }
+        customElements.define('update-li', UpdateLi, { extends: 'li' });
+        function renderUpdate(data) {
+            const updateInfo = data.slice();
+            updateInfo.sort((a, b) => new Date(b.date) - new Date(a.date));
+            $UL.information.innerHTML = '';
+            config.rendering = updateInfo;
+            for (let i = 0; i < 10; i++) {
+                if (i > updateInfo.length - 1) break;
+                const data = config.rendering.splice(0, 1)[0];
+                if (!data) break;
+                new UpdateLi(data);
+            }
+        }
+
+        const mastoSrc = 'https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffedibird.com%2Fusers%2Fnoratetsu&theme=dark&size=80&header=false&replies=true&boosts=false';
+        setInterval(() => {
+            document.getElementById('Mastofeed').src = mastoSrc + '?' + dateAndTime('yymmddhhnnss');
+
+        }, 60 * 60 * 1000)
+
+        fetch('https://nora-tetsu.github.io/information.json')
+            .then(response => response.text())
+            .then(data => {
+                renderUpdate(JSON.parse(data));
+            })
+    </script>
+</body>
+
+</html>
