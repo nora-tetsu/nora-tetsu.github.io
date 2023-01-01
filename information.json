@@ -796,5 +796,65 @@
 		"type": "他",
 		"subject": "Informationに過去の投稿を全て追加",
 		"URL": ""
+	},
+	{
+		"date": "2022-12-18T09:56",
+		"type": "投稿",
+		"subject": "ホームページ（仮）を作った",
+		"URL": "https://noratetsu.blogspot.com/2022/12/about-homepage.html"
+	},
+	{
+		"date": "2022-12-18T15:19",
+		"type": "投稿",
+		"subject": "アウトプットのコントロールド下手問題",
+		"URL": "https://noratetsu.blogspot.com/2022/12/control-output.html"
+	},
+	{
+		"date": "2022-12-19T18:57",
+		"type": "投稿",
+		"subject": "「とりあえずブログに」の定着を試みる",
+		"URL": "https://noratetsu.blogspot.com/2022/12/blog-post.html"
+	},
+	{
+		"date": "2022-12-22T21:42",
+		"type": "投稿",
+		"subject": "「報いの時」感想",
+		"URL": "https://noratetsu.blogspot.com/2022/12/kamakura13.html"
+	},
+	{
+		"date": "2022-12-25T16:58",
+		"type": "投稿",
+		"subject": "よくわかるNoratetsu Lab（2022年版）～前編～",
+		"URL": "https://noratetsu.blogspot.com/2022/12/omnibus2022a.html"
+	},
+	{
+		"date": "2022-12-28T14:35",
+		"type": "投稿",
+		"subject": "自分とゲーム①～ソシャゲの話～",
+		"URL": "https://noratetsu.blogspot.com/2022/12/game-and-me01.html"
+	},
+	{
+		"date": "2022-12-28T23:44",
+		"type": "投稿",
+		"subject": "自分とゲーム②～RPGの話～",
+		"URL": "https://noratetsu.blogspot.com/2022/12/game-and-me02.html"
+	},
+	{
+		"date": "2022-12-29T22:49",
+		"type": "投稿",
+		"subject": "よくわかるNoratetsu Lab（2022年版）～後編～",
+		"URL": "https://noratetsu.blogspot.com/2022/12/omnibus2022b.html"
+	},
+	{
+		"date": "2022-12-30T09:32",
+		"type": "投稿",
+		"subject": "2022年の振り返り",
+		"URL": "https://noratetsu.blogspot.com/2022/12/review2022.html"
+	},
+	{
+		"date": "2023-01-01T11:49",
+		"type": "投稿",
+		"subject": "2023年にやっていくこと",
+		"URL": "https://noratetsu.blogspot.com/2023/01/resolution2023.html"
 	}
 ]
