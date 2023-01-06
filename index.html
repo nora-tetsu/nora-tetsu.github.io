@@ -384,7 +384,7 @@
                     className: 'type',
                     name: data.type,
                 }, this.$link);
-                if (FAVICON.some(obj => {
+                FAVICON.some(obj => {
                     if (!data.URL) return true;
                     if (data.URL.startsWith(obj.host)) {
                         this.$icon = createDOM('img', {
@@ -396,12 +396,12 @@
                         }, this.$link);
                         return true;
                     }
-                }))
-                    this.$subject = createDOM('span', {
-                        textContent: data.subject,
-                        title: data.URL,
-                        className: 'subject',
-                    }, this.$link)
+                })
+                this.$subject = createDOM('span', {
+                    textContent: data.subject,
+                    title: data.URL,
+                    className: 'subject',
+                }, this.$link)
                 editDOM(this, {
                     is: 'update-li',
                     className: 'information-item',
