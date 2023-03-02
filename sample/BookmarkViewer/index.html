@@ -1,0 +1,274 @@
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta name="google" content="notranslate">
+    <title>Bookmark Viewer</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.4);
+            border: none;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            box-shadow: none;
+        }
+
+        body {
+            --color-A: #f8f8f4;
+            --color-B: #f4f4f0;
+        }
+
+        h1 {
+            --color-A: #646E78;
+            --color-B: #505564;
+            opacity: 0.9;
+            color: #fff;
+            padding: 5px 10px;
+            margin-top: 0;
+        }
+
+        body,
+        h1 {
+            background-image:
+                radial-gradient(circle at 100% 150%, var(--color-B) 24%, var(--color-A) 24%, var(--color-A) 28%, var(--color-B) 28%, var(--color-B) 36%, var(--color-A) 36%, var(--color-A) 40%, transparent 40%, transparent),
+                radial-gradient(circle at 0 150%, var(--color-B) 24%, var(--color-A) 24%, var(--color-A) 28%, var(--color-B) 28%, var(--color-B) 36%, var(--color-A) 36%, var(--color-A) 40%, transparent 40%, transparent),
+                radial-gradient(circle at 50% 100%, var(--color-A) 10%, var(--color-B) 10%, var(--color-B) 23%, var(--color-A) 23%, var(--color-A) 30%, var(--color-B) 30%, var(--color-B) 43%, var(--color-A) 43%, var(--color-A) 50%, var(--color-B) 50%, var(--color-B) 63%, var(--color-A) 63%, var(--color-A) 71%, transparent 71%, transparent),
+                radial-gradient(circle at 100% 50%, var(--color-A) 5%, var(--color-B) 5%, var(--color-B) 15%, var(--color-A) 15%, var(--color-A) 20%, var(--color-B) 20%, var(--color-B) 29%, var(--color-A) 29%, var(--color-A) 34%, var(--color-B) 34%, var(--color-B) 44%, var(--color-A) 44%, var(--color-A) 49%, transparent 49%, transparent),
+                radial-gradient(circle at 0 50%, var(--color-A) 5%, var(--color-B) 5%, var(--color-B) 15%, var(--color-A) 15%, var(--color-A) 20%, var(--color-B) 20%, var(--color-B) 29%, var(--color-A) 29%, var(--color-A) 34%, var(--color-B) 34%, var(--color-B) 44%, var(--color-A) 44%, var(--color-A) 49%, transparent 49%, transparent);
+            background-size: 128px 64px;
+        }
+
+        body {
+            font-family: "UD デジタル 教科書体 NK-B", "MotoyaLMaru W3 mono", "Roboto", Meiryo, Helvetica, Arial, "Hiragino Sans", sans-serif;
+            color: #553;
+        }
+
+        details>summary {
+            cursor: default;
+            margin: 4px 0;
+        }
+
+        .flexwrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            display: block;
+            margin: 0 10px;
+            flex: 1;
+            height: 90vh;
+            overflow-y: scroll;
+        }
+
+        ul.grid {
+            align-items: center;
+            align-content: center;
+            list-style-type: none;
+            width: 100%;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        li.grid-item {
+            width: 65px;
+            height: 70px;
+            margin: 4px;
+            padding: 4px;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        li.grid-item>a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow-y: auto;
+            text-decoration: none;
+            color: unset;
+        }
+
+        li.grid-item .title {
+            font-size: 12px;
+            margin: 0;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        li.grid-item .description {
+            font-size: 10px;
+            color: #444;
+            margin-top: 4px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .inline-block {
+            display: inline-block;
+            margin: 2px 20px;
+        }
+
+        section ul {
+            padding-inline-start: 0;
+            list-style-type: none;
+        }
+
+        section ul li {
+            margin: 10px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inline-block">
+            <input type="search" name="search" value="" id="qsearch" placeholder="フィルター">
+        </div>
+    </header>
+    <main class="main" style="display:flex; width: 100%; padding: 0 10px;">
+        <div class="column" id="column-left">
+            <h1>のらてつについて</h1>
+        </div>
+        <div class="column" id="column-center">
+            <h1>使っているもの</h1>
+        </div>
+        <div class="column" id="column-right">
+            <h1>その他</h1>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        const CATEGORY = [
+            { id: "Home", summary: "ホームページ等", column: "left", open: true },
+            { id: "SNS", summary: "短文投稿", column: "left", open: true },
+            { id: "Writing", summary: "書き物", column: "left", open: true },
+            { id: "Scrapbox", summary: "Scrapbox", column: "left", open: true },
+            { id: "Attend", summary: "時々いるところ", column: "left", open: true },
+            { id: "Using", summary: "常に使っている", column: "center", open: true },
+            { id: "Often", summary: "時々使っている", column: "center", open: true },
+            { id: "Know", summary: "使ったことがある", column: "center", open: false },
+            { id: "Programming", summary: "プログラミング関連", column: "right", open: true },
+        ];
+
+        /** @type {HTMLCollectionOf<HTMLLIElement>} */
+        const items = document.getElementsByClassName('grid-item');
+        document.getElementById('qsearch').addEventListener('keydown', function () {
+            setTimeout(() => {
+                const value = this.value.toLocaleLowerCase();
+                if (!value) {
+                    for (const item of items) {
+                        item.classList.remove('hidden');
+                    }
+                } else {
+                    for (const item of items) {
+                        item.textContent.toLocaleLowerCase().includes(value) || item.querySelector('a').href.toLocaleLowerCase().includes(value) ?
+                            item.classList.remove('hidden') :
+                            item.classList.add('hidden');
+                    }
+                }
+            }, 10)
+        })
+
+        fetch("./bookmarks.csv")
+            .then(response => response.text())
+            .then(text => {
+                renderContainer();
+                const data = csv2json(text);
+                render(data);
+                console.log(data);
+            })
+
+        function renderContainer() {
+            for (const obj of CATEGORY) {
+                const container = document.getElementById(`column-${obj.column}`);
+
+                const details = container.appendChild(document.createElement('details'));
+                if (obj.open) details.open = true;
+
+                const summary = details.appendChild(document.createElement('summary'));
+                summary.textContent = obj.summary;
+
+                const ul = details.appendChild(document.createElement('ul'));
+                ul.className = 'grid flexwrap';
+                ul.id = obj.id;
+            }
+        }
+
+        /**
+         * @param csvtext {string}
+         */
+        function csv2json(csvtext) {
+            const rows = csvtext.split('\n').filter(str => str.length > 7);
+            const keys = rows.splice(0, 1)[0].replace(/\r/g, '').split(',');
+            console.log(keys)
+            const result = rows.map(row => {
+                const data = row.split(',');
+                const obj = {};
+                for (let i = 0; i < keys.length; i++) {
+                    obj[keys[i]] = data[i] || '';
+                }
+                return obj;
+            })
+            return result;
+        }
+
+        /**
+         * @param dataArr {{
+         * title: string;
+         * url: string;
+         * tag: string;
+         * description: string;
+         * favicon: string;
+         * }[]}
+         */
+        function render(dataArr) {
+            for (const data of dataArr) {
+                const { title, url, tag, description, favicon } = data;
+                const container = document.getElementById(tag);
+
+                const li = container.appendChild(document.createElement('li'));
+                li.classList.add('grid-item');
+
+                const anchor = li.appendChild(document.createElement('a'));
+                anchor.target = '_blank';
+                anchor.rel = 'noopener noreferrer';
+                anchor.href = url;
+                anchor.title = title;
+                if (description) anchor.title += '\n' + description;
+
+                const icon = anchor.appendChild(document.createElement('img'));
+                icon.src = favicon ? favicon : `http://www.google.com/s2/favicons?domain=${url}`;
+                icon.width = 16;
+                icon.height = 16;
+
+                const titleElm = anchor.appendChild(document.createElement('p'));
+                titleElm.classList.add('title');
+                titleElm.textContent = title;
+
+                const descriptionElm = anchor.appendChild(document.createElement('p'));
+                descriptionElm.classList.add('description');
+                descriptionElm.innerHTML = description;
+            }
+        }
+    </script>
+</body>
+
+</html>
