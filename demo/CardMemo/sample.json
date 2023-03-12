@@ -1,0 +1,44 @@
+[
+    {
+        "attribute": "！/薄赤/",
+        "date": "2023/03/12",
+        "text": "attribute設定見本",
+        "quote": "",
+        "source": ""
+    },
+    {
+        "attribute": "P",
+        "date": "2023/03/12",
+        "text": "Pickup設定見本",
+        "quote": "",
+        "source": ""
+    },
+    {
+        "attribute": "X",
+        "date": "2023/03/12",
+        "text": "トラッシュ設定見本",
+        "quote": "",
+        "source": ""
+    },
+    {
+        "attribute": "",
+        "date": "2023/03/12",
+        "text": "引用設定見本",
+        "quote": "のらてつ",
+        "source": ""
+    },
+    {
+        "attribute": "",
+        "date": "2023/03/12",
+        "text": "ソース設定見本\n右上にリンクアイコンを表示",
+        "quote": "",
+        "source": "https://nora-tetsu.github.io/"
+    },
+    {
+        "attribute": "！/薄赤/P",
+        "date": "2023/03/12",
+        "text": "各設定は同時に使用することができます",
+        "quote": "のらてつ",
+        "source": "https://nora-tetsu.github.io/"
+    }
+]
