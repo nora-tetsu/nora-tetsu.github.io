@@ -1,0 +1,722 @@
+[
+    {
+        "noid": "n38b1M198",
+        "attr": "/薄赤/",
+        "text": "Two-Column Outliner サンプル",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9u5977",
+        "attr": "",
+        "text": "※開閉アイコンの色が濃いノードは子項目を持つノードです。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n38b1M198",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i4a500",
+        "attr": "/薄緑/",
+        "text": "このアプリケーションを作った動機",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n39i4q181",
+        "attr": "",
+        "text": "アウトライナーも自分で作れるのでは？と思ったのでやってみた",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i4a500",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i4Q95",
+        "attr": "",
+        "text": "Drummerを見て、ノードにメタデータを自由に付与したいと思った",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i4a500",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i5C612",
+        "attr": "",
+        "text": "一般的なアウトライナーは1カラムであることに不便を感じていた",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i4a500",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n38aVK933",
+        "attr": "/薄緑/",
+        "text": "このサンプルについて",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n38b1N283",
+        "attr": "",
+        "text": "2022年3月時点で作ったアプリケーションのコードを書き直したものです。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n38aVK933",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9eV378",
+        "attr": "",
+        "text": "実際に編集することができ、編集した結果はlocalStorageに保存されます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n38aVK933",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9fu877",
+        "attr": "",
+        "text": "localStorageはブラウザ内の保存領域であり、データが通信されることはありません。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9eV378",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9jE761",
+        "attr": "",
+        "text": "localStorageの「TwoColumnOutliner」キーにJSON形式で保存されています。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9eV378",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9lk50",
+        "attr": "",
+        "text": "値を削除すればサンプルデータが復活します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9jE761",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f5h806",
+        "attr": "",
+        "text": "当時色々な機能をつけていましたが、今回は「アウトライナーを自分で作ったんですよ」という部分が肝なので、アウトライナー機能と直接関わらない機能は省略しました。（リファクタリングが非常に大変で力尽きたため）",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n38aVK933",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f6y207",
+        "attr": "/薄紫/",
+        "text": "当初実装したけど今回省略した機能",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f5h806",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f6N65",
+        "attr": "",
+        "text": "検索",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f6X763",
+        "attr": "",
+        "text": "フォーカスしている範囲のScrapbox出力・Markdown出力",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fmJ584",
+        "attr": "",
+        "text": "「attr」欄でのHeading設定",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f7s814",
+        "attr": "",
+        "text": "「whose」欄に記述時にノードの右端にアイコン表示",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f80307",
+        "attr": "",
+        "text": "「url」欄に記述時にノードの右端にリンク設置",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9yA662",
+        "attr": "",
+        "text": "「note」欄にノードIDをダブルブラケットで囲って記述でノード間リンク設定",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f6y207",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i7G158",
+        "attr": "/薄黄/",
+        "text": "代わりに進化した要素",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f5h806",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i7K990",
+        "attr": "",
+        "text": "フォーカスアイコンの表示タイミング（前はずらっと並んでいたが、今回はマウスオーバーで表示）",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i8m291",
+        "attr": "",
+        "text": "インデント位置を示す縦線をつけた",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i9l429",
+        "attr": "",
+        "text": "ドラッグアンドドロップ時の挙動の安定性を高めた",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39ia494",
+        "attr": "",
+        "text": "データを自動保存するようにした",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39iaw358",
+        "attr": "",
+        "text": "undo・redoを実装した",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39ib0164",
+        "attr": "",
+        "text": "※ショートカットキーは設定していません。左下のボタン押下時のみ機能します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39iaw358",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39i9G183",
+        "attr": "",
+        "text": "とにかくバグを潰した",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39i7G158",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39f8M575",
+        "attr": "/薄緑/",
+        "text": "特徴",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n39f9b491",
+        "attr": "",
+        "text": "MainアウトラインとFocusアウトラインの2カラムレイアウトです。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f8M575",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n39fis240",
+        "attr": "",
+        "text": "各ノード左端のフォーカスアイコン（虫眼鏡）をクリックでフォーカスします。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f9b491",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39hG5639",
+        "attr": "",
+        "text": "フォーカスアイコンはノードにマウスオーバーで表示されます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fis240",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39flk496",
+        "attr": "",
+        "text": "ノードのメタデータと子孫項目を表示します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fis240",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jiO622",
+        "attr": "",
+        "text": "フォーカスアイコンをもう一度クリックするとフォーカスを解除します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fis240",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39iUL608",
+        "attr": "",
+        "text": "FocusアウトラインもMainアウトラインと同様に編集・操作できます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f9b491",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fkq230",
+        "attr": "",
+        "text": "各ノードには普通のテキスト部分の他に4つのメタデータがあります。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f8M575",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n39fqy507",
+        "attr": "/薄黄/",
+        "text": "attr",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fkq230",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fsB781",
+        "attr": "",
+        "text": "ノードに属性を付与する欄です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fqy507",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fsN844",
+        "attr": "",
+        "text": "このサンプルでは、「/薄赤/」という形で書くことによってノードの背景色を変更することができます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fqy507",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39ftt96",
+        "attr": "",
+        "text": "有効なのは「赤」「黄」「緑」「青」「水」「紫」「薄赤」「薄黄」「薄緑」「薄青」「薄水」「薄紫」です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsN844",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fFL17",
+        "attr": "",
+        "text": "他に文字色の変更やHeading設定をできるようにしていましたが、このサンプルでは省略しています。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fqy507",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fsu911",
+        "attr": "/薄黄/",
+        "text": "whose",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fkq230",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fCS791",
+        "attr": "",
+        "text": "ノードの内容が引用である時、出典となる人物・作品名等を書く欄です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsu911",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fEP122",
+        "attr": "",
+        "text": "当初はノードの右端に出典確認用のアイコンを設置していましたが、このサンプルでは省略しています。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsu911",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fsw609",
+        "attr": "/薄黄/",
+        "text": "url",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fkq230",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fDO621",
+        "attr": "",
+        "text": "ノードに関連したwebページがある時、URLを記述する欄です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsw609",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fFe925",
+        "attr": "",
+        "text": "当初はノードの右端にリンク先に飛ぶためのリンクアイコンを設置していましたが、このサンプルでは省略しています。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsw609",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fsy276",
+        "attr": "/薄黄/",
+        "text": "note",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fkq230",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39fGq289",
+        "attr": "",
+        "text": "ノードに関連したメモを書く欄です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39fsy276",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jnQ258",
+        "attr": "",
+        "text": "基本的なアウトライン操作がある程度できます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f8M575",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n39jvD86",
+        "attr": "/薄黄/",
+        "text": "Enterで新規ノード作成",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jw3895",
+        "attr": "",
+        "text": "キャレットがどの位置にあっても新規ノードを作成します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jvD86",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jwt270",
+        "attr": "",
+        "text": "Shift+Enterで上側に作成します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jvD86",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jwM277",
+        "attr": "/薄黄/",
+        "text": "Tab/Shift+Tabでインデント/アンインデント",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a98s505",
+        "attr": "/薄黄/",
+        "text": "CtrlまたはAlt+↑/↓でノードを入れ替え",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39jxo288",
+        "attr": "/薄黄/",
+        "text": "ドラッグアンドドロップ",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39iVX45",
+        "attr": "",
+        "text": "MainアウトラインとFocusアウトラインの間でもドラッグアンドドロップが可能です。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jxo288",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9qj520",
+        "attr": "/薄黄/",
+        "text": "Ctrl+Shift+Backspaceでノード削除",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n39juW619",
+        "attr": "/薄紫/",
+        "text": "ですが、有名なアウトライナーと同じ操作感ではありません。（気力不足のため）",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39jnQ258",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a94q687",
+        "attr": "",
+        "text": "ノードの文字数が長くて複数行になる時、上下キーを押してもキャレットは上下の行の同位置ではなく上下のノードの先頭に移動します。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a97F548",
+        "attr": "",
+        "text": "ノードの先頭で左キー、末尾で右キーを押しても前後のノードには移りません。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9gC164",
+        "attr": "",
+        "text": "ノードの文字列の途中にキャレットがある状態でEnterを押しても、文字列の分割はされず、新規にノードが作られます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9hd721",
+        "attr": "",
+        "text": "（分割する方法はわかっていますが、このサンプルでは省略しました）",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9gC164",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9rW135",
+        "attr": "",
+        "text": "ノードが空の状態でBackspaceを押してもノードは消えません。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9su263",
+        "attr": "",
+        "text": "ノードの末尾でDeleteを押しても次のノードと連結しません。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3aal3525",
+        "attr": "",
+        "text": "複数のノードを選択することはできません。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39juW619",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9lX6",
+        "attr": "",
+        "text": "undo/redoボタンで操作を戻したりやり直したりできます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n39f8M575",
+        "isCollapsed": true
+    },
+    {
+        "noid": "n3a9mo673",
+        "attr": "",
+        "text": "ページをロードして以降のデータの変更を保存しています。リロードするとそれ以前の履歴には戻れません（ごく一般的な挙動）。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9lX6",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9nS340",
+        "attr": "",
+        "text": "テキスト編集時でのCtrl+Z/Yの操作と干渉するのを防ぐため、ショートカットキーは設定していません。左下のボタンでのみ実行できます。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9lX6",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9iV512",
+        "attr": "",
+        "text": "Sandbox",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9j1699",
+        "attr": "",
+        "text": "ご自由に編集してください。",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9iV512",
+        "isCollapsed": false
+    },
+    {
+        "noid": "n3a9ja96",
+        "attr": "",
+        "text": "",
+        "whose": "",
+        "url": "",
+        "note": "",
+        "parent": "n3a9iV512",
+        "isCollapsed": false
+    }
+]

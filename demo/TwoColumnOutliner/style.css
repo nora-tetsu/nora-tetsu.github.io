@@ -1,0 +1,203 @@
+:root {
+    --window-width: calc(100vw - 10px)
+}
+
+body {
+    padding: 0 20px
+}
+
+main,
+.column,
+ul,
+li,
+header {
+    width: 100%;
+    position: relative
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0;
+    margin-right: 10px;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 22px)
+}
+
+span:focus {
+    outline: unset
+}
+
+ul {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    -webkit-padding-start: 14px;
+    padding-inline-start: 14px;
+    list-style-type: none;
+    width: auto
+}
+
+h1 {
+    font-size: 16px;
+    background-repeat: repeat
+}
+
+.column {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #fff
+}
+
+.column-left {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+.column-right {
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+
+.column-right details {
+    padding-left: 10px
+}
+
+.hidden {
+    display: none !important
+}
+
+#attributes {
+    padding: 10px;
+    padding-top: 0;
+    position: relative;
+    font-size: 12px;
+    overflow: visible
+}
+
+#attributes div {
+    display: flex
+}
+
+#attributes div span {
+    display: block;
+    margin-right: 10px;
+    width: 70px
+}
+
+#attributes div textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 22px
+}
+
+ul.list {
+    padding-left: 30px;
+    margin-right: 2px;
+    width: auto;
+    height: calc(100% - 46px);
+    overflow-y: auto
+}
+
+ul#focus {
+    height: calc(100% - 234px)
+}
+
+li[is=outline-li] {
+    width: auto;
+    margin-top: 3px
+}
+
+li[is=outline-li] i {
+    font-style: normal;
+    font-variant: normal;
+    width: 14px;
+    text-align: center
+}
+
+li[is=outline-li] span {
+    width: 100%;
+    padding-left: 4px;
+    cursor: text
+}
+
+li[is=outline-li]>div {
+    position: relative;
+    width: calc(100% - 30px)
+}
+
+li[is=outline-li]>div * {
+    display: inline-block;
+    font-size: 14px
+}
+
+li[is=outline-li]>div:hover .focus-icon {
+    opacity: 1
+}
+
+li[is=outline-li]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: -8px;
+    border-left: 1px solid #f0f0f0
+}
+
+#update-attr {
+    position: absolute;
+    top: -10px;
+    right: 10px
+}
+
+#attr-noid {
+    cursor: default;
+    width: calc(100% - 70px) !important
+}
+
+#attr-parent {
+    cursor: pointer;
+    width: calc(100% - 70px) !important
+}
+
+.node-icon,
+.focus-icon,
+.from-icon,
+.source-icon {
+    position: absolute;
+    top: 0;
+    color: #ddd;
+    cursor: default;
+    font-size: 12px;
+    margin-top: 2px;
+    cursor: pointer
+}
+
+.node-icon {
+    left: -14px;
+    background-color: #fff
+}
+
+.focus-icon {
+    left: -26px;
+    opacity: 0
+}
+
+li.hasChild>div .node-icon {
+    color: #888
+}
+
+li.onfocus {
+    outline: #ddd 2px dashed;
+    z-index: 10
+}
+
+li.onfocus>div .focus-icon {
+    color: #888
+}
