@@ -1,0 +1,50 @@
+[
+    {
+        "name": "薄赤",
+        "code": "#ffeaea"
+    },
+    {
+        "name": "薄青",
+        "code": "#e4e4ff"
+    },
+    {
+        "name": "薄水",
+        "code": "#d6f6ff"
+    },
+    {
+        "name": "薄緑",
+        "code": "#d9f3d9"
+    },
+    {
+        "name": "薄黄",
+        "code": "#fffde0"
+    },
+    {
+        "name": "薄紫",
+        "code": "#f3d9ff"
+    },
+    {
+        "name": "赤",
+        "code": "#f01b1b"
+    },
+    {
+        "name": "青",
+        "code": "#441bf8"
+    },
+    {
+        "name": "水",
+        "code": "#a1ddff"
+    },
+    {
+        "name": "緑",
+        "code": "#37b137"
+    },
+    {
+        "name": "黄",
+        "code": "#ffff2b"
+    },
+    {
+        "name": "紫",
+        "code": "#b11cb1"
+    }
+]
