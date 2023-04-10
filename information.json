@@ -787,7 +787,7 @@
 	},
 	{
 		"date": "2022-12-17T10:50",
-		"type": "他",
+		"type": "公開",
 		"subject": "このページを公開",
 		"URL": ""
 	},
@@ -859,7 +859,7 @@
 	},
 	{
 		"date": "2023-01-06T12:26",
-		"type": "他",
+		"type": "公開",
 		"subject": "Noratetsu Lab Dict.公開",
 		"URL": "https://scrapbox.io/NLab-dict/"
 	},
@@ -1006,5 +1006,71 @@
 		"type": "投稿",
 		"subject": "NTA-DIY：1ヶ月目⑥～実作：簡単なブックマークレット～",
 		"URL": "https://noratetsu.blogspot.com/2023/02/NTA-DIY-1-6.html"
+	},
+	{
+		"date": "2023-02-19T21:43",
+		"type": "投稿",
+		"subject": "自分のブログを持つということ",
+		"URL": "https://noratetsu.blogspot.com/2023/02/RunningOwnBlog.html"
+	},
+	{
+		"date": "2023-02-21T21:27",
+		"type": "投稿",
+		"subject": "NTA-DIY：1ヶ月目⑦～DOMとAmazonブックマークレット～",
+		"URL": "https://noratetsu.blogspot.com/2023/02/NTA-DIY-1-7.html"
+	},
+	{
+		"date": "2023-02-23T18:34",
+		"type": "投稿",
+		"subject": "NTA-DIY：1ヶ月目⑧～ScrapboxのUserScriptを作ってみる～",
+		"URL": "https://noratetsu.blogspot.com/2023/02/NTA-DIY-1-8.html"
+	},
+	{
+		"date": "2023-03-02T10:53",
+		"type": "公開",
+		"subject": "Bookmark Viewer（サンプル）",
+		"URL": "https://nora-tetsu.github.io/sample/BookmarkViewer/"
+	},
+	{
+		"date": "2023-03-02T22:16",
+		"type": "投稿",
+		"subject": "NTA-DIY：1ヶ月目⑨～ブックマーク管理ツールを作ってみる～",
+		"URL": "https://noratetsu.blogspot.com/2023/03/NTA-DIY-1-9.html"
+	},
+	{
+		"date": "2023-03-10T17:09",
+		"type": "投稿",
+		"subject": "NTA-DIY：前日譚③～Excelの拡張としてのデジタルDIY～",
+		"URL": "https://noratetsu.blogspot.com/2023/03/NTA-DIY-0-3.html"
+	},
+	{
+		"date": "2023-03-12T10:53",
+		"type": "公開",
+		"subject": "Card Memo",
+		"URL": "https://nora-tetsu.github.io/demo/CardMemo/"
+	},
+	{
+		"date": "2023-03-12T11:56",
+		"type": "投稿",
+		"subject": "NTA-DIY：1ヶ月目⑩～初めてのノートテイキングアプリDIY～",
+		"URL": "https://noratetsu.blogspot.com/2023/03/blog-post.html"
+	},
+	{
+		"date": "2023-03-21T12:09",
+		"type": "投稿",
+		"subject": "Dynalistでブログを書く",
+		"URL": "https://tunnellingchannel.substack.com/p/dynalist"
+	},
+	{
+		"date": "2023-03-26T21:45",
+		"type": "投稿",
+		"subject": "誰かの「その人なりに」を見かけるだけで嬉しい",
+		"URL": "https://tunnellingchannel.substack.com/p/df7"
+	},
+	{
+		"date": "2023-03-30T23:28",
+		"type": "投稿",
+		"subject": "NTA-DIY：前日譚④～VBScriptの感動～",
+		"URL": "https://noratetsu.blogspot.com/2023/03/NTA-DIY-0-4.html"
 	}
 ]
