@@ -136,7 +136,7 @@ const history = {
     DATA: [] as Datatype[][],
     current: -1,
     set(shouldRender: boolean = false) {
-        if (JSON.stringify(this.DATA[this.current]) == JSON.stringify(operate.data)) return;
+        //if (this.current > -1 && JSON.stringify(this.DATA[this.current]) == JSON.stringify(operate.data)) return console.log(operate.data);
         const current = JSON.parse(JSON.stringify(operate.data)); // 参照を切るため
         this.DATA.splice(this.current + 1, this.DATA.length, current);
         this.current++;
@@ -145,13 +145,15 @@ const history = {
     undo() {
         if (this.current <= 0) return;
         console.log('undo');
-        operate.save(this.DATA[this.current - 1]);
+        const data = JSON.parse(JSON.stringify(this.DATA[this.current - 1]));
+        operate.save(data);
         this.current--;
     },
     redo() {
         if (this.current >= this.DATA.length - 1) return;
         console.log('redo');
-        operate.save(this.DATA[this.current + 1]);
+        const data = JSON.parse(JSON.stringify(this.DATA[this.current + 1]));
+        operate.save(data);
         this.current++;
     },
 }
@@ -418,11 +420,8 @@ class OutlineLi extends HTMLLIElement {
                 if (!this.findData()) return;
                 if (this.findData().text == this.text) return;
                 this.findData().text = this.text;
-                const nodes = OutlineLi.getAllInstancesByNoid(this.noid);
-                for (const node of nodes) {
-                    if (node != this) node.text = this.text;
-                }
                 history.set();
+                render.all();
                 console.log('set(blur)');
             }, 10)
         },
