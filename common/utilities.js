@@ -22,6 +22,27 @@ export const loadData = (dataType) => {
     }
 };
 export const saveData = (dataType) => localStorage.setItem(dataType.name, JSON.stringify(dataType.data));
+// 改良版
+/**
+ * localStorageでデータを管理する
+ * @param name localStorageのキー名
+ * @param defaultData ex) fetch('./sample.json').then(res => res.text())
+ * @param type 'string' | 'array' | 'object'
+ * @param data ex) () => Object.assign({}, DATA)
+ * @returns
+ */
+export const createDatabase = (name, defaultData, type, data) => {
+    const obj = {
+        name: name,
+        default: defaultData,
+        type: type,
+        get data() { return data(); },
+    };
+    return {
+        load: () => loadData(obj),
+        save: () => saveData(obj),
+    };
+};
 // DOM生成
 export function createButton(display, onClick, tooltip) {
     return document.createElement('button').addAttribute({

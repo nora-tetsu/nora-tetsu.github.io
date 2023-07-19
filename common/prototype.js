@@ -1,3 +1,46 @@
+String.prototype.toClipboard = function () {
+    const txt = this.toString();
+    navigator.clipboard.writeText(txt)
+        .then(() => {
+        //console.log("Text copied to clipboard...")
+        console.group('Copied to clipboard');
+        console.log(txt.length < 100 ? txt : txt.slice(0, 100) + '…');
+        console.groupEnd();
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    });
+    return this;
+};
+String.prototype.linkToHTML = function () {
+    let text = this.toString();
+    const arr = [
+        {
+            regexp: /\[([^\]]+)\]\(((h?)(ttps?:\/\/[a-zA-Z0-9.\-_@:/~?%&;=+#',()*!]+))\)/g,
+            func(match, title, url, h, href) { return `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`; },
+        },
+        {
+            regexp: /\[([^\]]+) ((h?)(ttps?:\/\/[a-zA-Z0-9.\-_@:/~?%&;=+#',()*!]+))\]/g,
+            func(match, title, url, h, href) { return `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`; },
+        },
+        {
+            regexp: /\[((h?)(ttps?:\/\/[a-zA-Z0-9.\-_@:/~?%&;=+#',()*!]+)) ([^\]]+)\]/g,
+            func(match, url, h, href, title) { return `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`; },
+        },
+        {
+            regexp: /\[((h?)(ttps?:\/\/gyazo.com\/[a-zA-Z0-9.\-_@:/~?%&;=+#',()*!]+))\]/g,
+            func(match, url, h, href) { return `<img src="${url}/raw">`; },
+        },
+        {
+            regexp: /\[((h?)(ttps?:\/\/[a-zA-Z0-9.\-_@:/~?%&;=+#',()*!]+))\]/g,
+            func(match, url, h, href) { return `<img src="${url}">`; },
+        },
+    ];
+    for (const obj of arr) {
+        text = text.replace(obj.regexp, obj.func);
+    }
+    return text;
+};
 const DIVISOR = 1000 * 60 * 60 * 24; // =86400000 ミリ秒から日数にする
 // https://opentechnica.blogspot.com/2012/03/javascript.html
 Date.prototype.getDayOfYear = function () {
